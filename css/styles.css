@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	padding: 30px;
+}
+
+.wrapper {
+	max-width: 70%;
+	background: #bed0ee;
+	padding: 40px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+	text-decoration: none;
+}
+
+.filter-wrap {
+	margin: 15px 0;
+}
+
+#manage-task {
+	padding: 5px;
+}
+
+.button {
+	border-top: 1px solid #96d1f8;
+	display: inline-block;
+	height: 36px;
+	background: #65a9d7;
+	background: -webkit-gradient(linear, left top, left bottom,
+	from(#3e779d), to(#65a9d7));
+	background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	padding: 4px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+	color: #f5ea88;
+	font-size: 11px;
+	font-family: Roboto, Sans-Serif;
+	font-style: normal;
+	text-decoration: none;
+	vertical-align: top;
+	
+}
+
+.button:hover {
+	border-top-color: #28597a;
+	background: #28597a;
+	color: #ccc;
+}
+
+.button:active {
+	border-top-color: #1b435e;
+	background: #1b435e;
+}
+
+
+input[type='text'], input[type='password'], input[type='email'] {
+	padding-left: 15px;
+	/*margin: 10px 0;*/
+	border: 2px solid #a973cc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	background: transparent !important;
+	outline: none;
+	height: 36px;
+	width: 60%;
+	color: #0018ff;
+	font-size: 20px;
+	vertical-align: top;
+	
+}
+
+input.changed-task {
+	border: 2px solid #a973cc;
+	outline: none;
+	height: 34px;
+	color: #0018ff;
+	font-size: 16px;
+}
+
+.target-done {
+	color: lightskyblue;
+	text-decoration: line-through;
+}
+
+.item-list {
+	max-width: 750px;
+	margin: auto;
+	text-align: left;
+	background: url(../img/9.jpg) no-repeat;
+	background-size: cover;
+}
+
+h2 {
+	margin: 20px auto 40px;
+	font-size: 30px;
+	color: #f5c64b;
+	max-width: 240px;
+	text-shadow: 1px 1px 1px #363ec0,
+	-1px 1px 1px #3662c0;
+	transition: all .5s;
+}
+
+h2:hover {
+	text-shadow: -1px -1px 1px silver,
+	1px -1px 1px silver;
+	color: white;
+}
+
+.item-list {
+	margin-top: 35px;
+	padding-left: 10px;
+	list-style: none;
+}
+
+.item-list li {
+	/*height: 34px;*/
+	overflow: auto;
+	font-size: 16px;
+	line-height: 34px;
+	border-bottom: 1px solid navy;
+	position: relative;
+	padding: 10px 0 10px 5px;
+	-webkit-transition: right 2s linear, height 2s linear;
+	-moz-transition: right 2s linear, height 2s linear;
+	-ms-transition: right 2s linear, height 2s linear;
+	-o-transition: right 2s linear, height 2s linear;
+	transition: right 2s linear, height 2s linear;
+}
+
+.share-task-btn {
+	background: url(../img/peer-to-peer-icon.png) no-repeat;
+}
+
+.edit {
+	background: url(../img/edit-icon1.png) no-repeat;
+}
+
+.btn-delete {
+	background: url(../img/delete-icon1.png) no-repeat;
+}
+
+.edit-confirm {
+	background: url(../img/ok-icon.png) no-repeat;
+}
+
+.item-list li input[type="button"] {
+	float: right;
+	width: 34px;
+	height: 34px;
+	border: none;
+	opacity: 0;
+	padding: 2px 2px;
+	margin-right: 5px;
+}
+
+.item-list li:hover input[type="button"] {
+	opacity: 0.4;
+	transition: opacity 0.4s ease-out 0.1s;
+}
+
+.item-list li input[type="button"]:hover {
+	opacity: 1;
+}
+
+.item-list li a {
+	float: right;
+	text-decoration: none;
+	background-color: indianred;
+}
+
+#add-new-task {
+	margin: 0 auto;
+}

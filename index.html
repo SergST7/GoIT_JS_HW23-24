@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Homework 23 - 24</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="js/Lib/jquery-3.1.0.js"></script>
+	<script src="js/Lib/lodash.js"></script>
+	<script src='js/main.js' type="text/javascript"></script>
+	<!--<script data-main="js/app" src="js/lib/require.js"></script>-->
+
+</head>
+
+<body>
+
+<!-- Шаблон для обертки списка заданий-->
+<script type="text/template" id="wrapp-tmpl">
+	<div class="wrapper">
+		<h2>Список&nbsp;заданий</h2>
+		<div class="controls">
+			<input type="text" class="new-task" placeholder="Новое задание">
+			<button class="add-btn button" href="#">Добавить задание</button>
+		</div>
+		<ul class="item-list"></ul>
+	</div>
+</script>
+
+<!-- Шаблон для нового задания-->
+<script type="text/template" id="task-template">
+
+	<% data.forEach(function(item) { %>
+	<li data-val="<%= item %>" class="task-item">
+		<input type="checkbox" class="done-toggle checkbox"> <%= item %>
+		<input type="button" title="Удалить" class="delete btn-delete"/>
+		<input type="button" title="Изменить" class="edit"/>
+	</li>
+	<% }); %>
+</script>
+
+<!-- Шаблон для редактирования задания-->
+<script type="text/template" id="edit-task-template">
+	<input type="text" class="changed-task" value='<%= title %>'/>
+</script>
+
+</body>
+
+</html>
